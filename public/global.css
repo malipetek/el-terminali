@@ -1,0 +1,250 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v128/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Framework7 Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Framework7Icons-Regular.woff2') format('woff2'),
+    url('fonts/Framework7Icons-Regular.woff') format('woff'),
+    url('fonts/Framework7Icons-Regular.ttf') format('truetype');
+}
+
+
+.f7-icons,
+.framework7-icons {
+  font-family: 'Framework7 Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  text-align: center;
+}
+
+
+#interactive.viewport {
+  width: 640px;
+  height: auto;
+  aspect-ratio: 4/3;
+	position: relative;
+}
+
+#interactive.viewport, #interactive.viewport > * {
+  max-width: 100%;
+}
+
+#interactive.viewport canvas{
+  width: 640px;
+	position: absolute;
+	left: 0;
+}
+
+#interactive .codebox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
+	transform-origin: top left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#interactive video {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+
+}
+
+.demo-card-header-pic .card-header {
+  height: 60vmin;
+  background-size: cover;
+  background-position: center;
+  color: #ccc;
+}
+
+.hide {
+  display: none;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-list .item-inner, .order-list .item-inner  {
+    display: flex!important;
+}
+
+.w-100, [w-100] {
+  width: 100%;
+}
+
+.flex, [flex] {
+  display: flex !important;
+}
+
+.flex-base {
+  align-items: baseline !important;
+}
+
+.flex-half {
+  flex: 1 1 50% !important;
+}
+
+.inline {
+  display: inline-block !important;
+}
+
+.flex-vcenter {
+  align-items: center !important;
+}
+
+.flex-wrap, [flex-wrap] {
+  flex-wrap: wrap !important;
+}
+
+.flex-full, [flex-full] {
+  flex: 1 1 100% !important;
+}
+
+.overline {
+  text-decoration: line-through !important;
+}
+
+.price-input input {
+  font-size: 1.3em !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.ml-3 {
+  margin-left: 3px !important;
+}
+
+.ml-5 {
+  margin-left: 5px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.ml-20 {
+  margin-left: 20px !important;
+}
+
+.ml-30 {
+  margin-left: 30px !important;
+}
+
+.mr-3 {
+  margin-right: 3px !important;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.mr-30 {
+  margin-right: 30px !important;
+}
+
+[text-large], .text-large {
+  font-size: 1.5em;
+}
+[text-small], .text-small {
+  font-size: 0.8em;
+}
+[text-x-large], .text-x-large {
+  font-size: 2em;
+}
+[text-xx-large], .text-xx-large {
+  font-size: 2.5em;
+}
+[text-right], .text-center {
+  text-align: right;
+}
+[text-center], .text-center {
+  text-align: center;
+}
+
+[monospace], .monospace {
+  font-family: monospace;
+}
+
+.border-bottom, [border-bottom] { 
+  position: relative;
+}
+.border-bottom:after, [border-bottom]:after {
+  content: '';
+  position: absolute;
+  background-color: var(--f7-list-item-border-color);
+  display: block;
+  z-index: 15;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  transform-origin: 50% 100%;
+  transform: scaleY(calc(1 / var(--f7-device-pixel-ratio)));
+}
+
+.green, [green] {
+  color: #4cd964;
+}
+
+.yellow, [yellow] {
+  color: #ffcc00;
+}
