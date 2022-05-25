@@ -90,7 +90,7 @@ define(['./workbox-cafb5428'], (function (workbox) { 'use strict';
 
   workbox.precacheAndRoute([{
     "url": "build/bundle.css",
-    "revision": "7d63f934e17175e7ff4c671826025d95"
+    "revision": "9bd6c9776f08be9f974de787cbc652f6"
   }, {
     "url": "build/main.js",
     "revision": "b6a89ef7876fa75ca93739e155fe4f4a"
