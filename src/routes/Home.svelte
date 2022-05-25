@@ -171,15 +171,15 @@
     return 'browser';
   }
 
-//   window.matchMedia('(display-mode: standalone)').addEventListener('change', (evt) => {
-//   let displayMode = 'browser';
-//     canInstall = true;
-//   if (evt.matches) {
-//     displayMode = 'standalone';
-//     canInstall = false;
-//     installed = true;
-//   }
-// });
+  window.matchMedia('(display-mode: standalone)').addEventListener('change', (evt) => {
+  let displayMode = 'browser';
+    canInstall = true;
+  if (evt.matches) {
+    displayMode = 'standalone';
+    canInstall = false;
+    installed = true;
+  }
+});
 
   onMount(async () => {
     cameras = (await navigator.mediaDevices.enumerateDevices()).filter(dev => dev.kind == 'videoinput');
@@ -289,7 +289,6 @@
           <Card>
             <CardContent>
               <Button on:click={async () => {
-                
                 deferredPrompt.prompt();
                 /** @const {'dismissed'|'accepted'} outcome */
                 const { outcome } = await deferredPrompt.userChoice;
