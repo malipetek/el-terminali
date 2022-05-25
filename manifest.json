@@ -5,8 +5,8 @@
   "background_color": "#fff",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/el-terminali/",
+  "start_url": "/el-terminali/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
