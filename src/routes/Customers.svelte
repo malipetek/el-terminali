@@ -5,6 +5,7 @@
   import svgToUrl from '../utils/svg-to-url.js';
   import { customers, tags } from '../store.js';
   import iterable from '../utils/iterable.js';
+  import structuredClone from '@ungap/structured-clone';
 
   let customerNotFoundPopup = false;
   let temporaryCustomer;

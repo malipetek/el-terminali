@@ -11,6 +11,7 @@ specifiers:
   '@rollup/plugin-node-resolve': ^11.0.0
   '@rollup/plugin-typescript': ^8.3.2
   '@tsconfig/svelte': ^3.0.0
+  '@ungap/structured-clone': ^1.0.1
   dayjs: ^1.11.2
   file-saver: ^2.0.5
   framework7: ^6.0.2
@@ -51,6 +52,7 @@ dependencies:
   '@babel/preset-env': 7.17.10_@babel+core@7.17.10
   '@rollup/plugin-babel': 5.3.1_18dfcb1ca7050ba6f445f613f30091b1
   '@rollup/plugin-json': 4.1.0_rollup@2.72.1
+  '@ungap/structured-clone': 1.0.1
   dayjs: 1.11.2
   file-saver: 2.0.5
   framework7: 6.3.17
@@ -1444,6 +1446,10 @@ packages:
 
   /@types/trusted-types/2.0.2:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
+    dev: false
+
+  /@ungap/structured-clone/1.0.1:
+    resolution: {integrity: sha512-zKVyTt6rELvPXYwcVPTJcPFtY0AckN5A7xWuc7owBqR0FdtuDYhE9MZZUi6IY1kZUQFSXV1B3UOOIyLkVHYd2w==}
     dev: false
 
   /abbrev/1.1.1:

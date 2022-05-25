@@ -9,6 +9,9 @@
   import Customers from './Customers.svelte';
   import Customer from './Customer.svelte';
   import { products, orders, customers, cartOrder, activeOrder, previewOrder, tags, seller } from '../store.js';
+  
+  import structuredClone from '@ungap/structured-clone';
+
   import downloadJSON from '../utils/download.js';
   import { onMount } from 'svelte';
   

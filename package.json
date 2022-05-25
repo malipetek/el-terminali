@@ -30,6 +30,7 @@
     "@babel/preset-env": "^7.17.10",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-json": "^4.1.0",
+    "@ungap/structured-clone": "^1.0.1",
     "dayjs": "^1.11.2",
     "file-saver": "^2.0.5",
     "framework7": "^6.0.2",
