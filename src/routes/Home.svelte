@@ -158,28 +158,28 @@
       deferredPrompt = null;
   });
 
-  /**
-   * @return {'twa'|'standalone'|'browser'}
-  */
-  function getPWADisplayMode() {
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-    if (document.referrer && document.referrer.startsWith('android-app://')) {
-      return 'twa';
-    } else if (navigator.standalone || isStandalone) {
-      return 'standalone';
-    }
-    return 'browser';
-  }
+  // /**
+  //  * @return {'twa'|'standalone'|'browser'}
+  // */
+  // function getPWADisplayMode() {
+  //   const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+  //   if (document.referrer && document.referrer.startsWith('android-app://')) {
+  //     return 'twa';
+  //   } else if (navigator.standalone || isStandalone) {
+  //     return 'standalone';
+  //   }
+  //   return 'browser';
+  // }
 
-  window.matchMedia('(display-mode: standalone)').addEventListener('change', (evt) => {
-  let displayMode = 'browser';
-    canInstall = true;
-  if (evt.matches) {
-    displayMode = 'standalone';
-    canInstall = false;
-    installed = true;
-  }
-});
+//   window.matchMedia('(display-mode: standalone)').addEventListener('change', (evt) => {
+//   let displayMode = 'browser';
+//     canInstall = true;
+//   if (evt.matches) {
+//     displayMode = 'standalone';
+//     canInstall = false;
+//     installed = true;
+//   }
+// });
 
   onMount(async () => {
     cameras = (await navigator.mediaDevices.enumerateDevices()).filter(dev => dev.kind == 'videoinput');
