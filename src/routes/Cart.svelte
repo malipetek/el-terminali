@@ -153,7 +153,7 @@ import { onDestroy, tick } from "svelte";
             <div text-large>ÖDEME</div>
           </Col>
           <Col width="50" text-right>
-            <div text-x-large>{(isNaN($cartOrder.paid) ? 0 : $cartOrder.paid).toFixed(2)}₺</div>
+            <div text-x-large>{(isNaN($cartOrder.paid) ? 0 : (+$cartOrder.paid)).toFixed(2)}₺</div>
           </Col>
         </Row>
         <Row yellow class="flex-base border-bottom">

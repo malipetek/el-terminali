@@ -159,15 +159,15 @@ export class HollowOrder {
   }
 
   get total() {
-    return ((((this.lineItems || []).reduce((acc, line) => +acc + ((+(line.product.price || 0) * 100 - (this.overrideTax ? (line.product.cost * line.product.tax) : 0)) * (+line.qty)), 0) - (this.discount * 100)) / 100) || 0).toFixed(2);
+    return (+(((this.lineItems || []).reduce((acc, line) => +acc + ((+(line.product.price || 0) * 100 - (this.overrideTax ? (line.product.cost * line.product.tax) : 0)) * (+line.qty)), 0) - (this.discount * 100)) / 100) || 0).toFixed(2);
   }
   get totalTax() {
     if(this.overrideTax) return (0).toFixed(2);
-    return (((this.lineItems || []).reduce((acc, line) => +acc + (((+(line.product.cost || 0) * 100) * ((+(line.product.tax || 0) * 100) / 10000) ) * (+line.qty)), 0) / 100) || 0).toFixed(2);
+    return (+((this.lineItems || []).reduce((acc, line) => +acc + (((+(line.product.cost || 0) * 100) * ((+(line.product.tax || 0) * 100) / 10000) ) * (+line.qty)), 0) / 100) || 0).toFixed(2);
   }
 
   get totalCost() {
-    return (((this.lineItems || []).reduce((acc, line) => +acc + ((+(line.product.cost || 0) * 100) * (+line.qty)), 0) / 100) || 0).toFixed(2);
+    return (+((this.lineItems || []).reduce((acc, line) => +acc + ((+(line.product.cost || 0) * 100) * (+line.qty)), 0) / 100) || 0).toFixed(2);
   }
 
   get totalProfit() {
@@ -177,7 +177,7 @@ export class HollowOrder {
   get due_amount() {
     const due_amount = (parseFloat(this.total) - (+this.paid || 0));
 
-    return due_amount.toFixed(2);
+    return (+due_amount).toFixed(2);
   }
 
   get data() {
